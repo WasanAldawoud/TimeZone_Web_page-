@@ -1,0 +1,608 @@
+body, h1, p, nav, main, section, article {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: verdana;
+    font-size: 1em;
+    background-color: #f8f8f8;
+    color: #15213a;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #eeedf0;
+    box-shadow: 0 2px 9px;
+    padding: 0.5em;
+    width: 100%;
+}
+.navbar{
+    display:block;
+    margin: 0;
+}
+.nav-item:hover{
+    background-color:#f94949da ;
+    border-radius: 4px;
+}
+main {
+    height: 32em;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("img/hero/watch.png");
+    background-size: 16.9%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:#f0ecec;
+    margin: 10px 20px;
+    padding: 3%;
+    z-index: 1;
+}
+
+.intro {
+    max-width: 600px;
+    max-height: 100%;
+    margin-top:2.5%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.intro h1 {
+    margin-left: 10%;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.intro p {
+    margin-left: 10%;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #f94949;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #eeedf0;
+    box-shadow: 0 2px 1px;
+    transition: color 0.4s linear;
+    cursor: pointer;
+    border-radius: 0.7em;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; /* Initial width is 0% */
+    height: 100%;
+    background-color: #514b4fe6;
+    transition: width 0.7s linear;
+    z-index: 0;
+}
+
+.button:hover::before {
+    width: 100%; /* Fill the entire button */
+}
+
+section {
+    background-color: #f8f8f8;
+    padding: 0;
+    margin-bottom: 3%;
+}
+
+.col {
+    text-align: center;
+}
+
+.section img {
+    transition: transform 0.7s linear;
+}
+
+.section:hover img {
+    transform: scale(0.8);
+}
+
+section p {
+    color: #ff8c88;
+}
+
+section h1 {
+    font-style: oblique;
+    font-weight: bold;
+    margin: 2%;
+}
+
+.card {
+    border: none;
+    margin: 5%;
+}
+
+.card-img-top {
+    transition: transform 0.5s; /* Add transition effect */
+}
+
+.card-img-top:hover {
+    transform: scale(1.035); /* Zoom out on hover */
+}
+
+.img-fluid:hover {
+    transform: scale(1.035);
+    filter: brightness(0.8) contrast(0.9);
+}
+
+section:nth-child(2) {
+    background-color: #f8f8f8;
+    margin-top: 2%;
+    height: fit-content;
+}
+
+.themidd {
+    text-align: center;
+    margin: 7%;
+    background-color: #f8f8f8;
+}
+.themidd p{
+    font-size: 1em;
+    color: #000000d1;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hover-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: rgba(255, 0, 0, 0.7); /* Red background with transparency */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-image:hover .hover-overlay {
+    opacity: 1;
+}
+
+.add-to-cart-button {
+    background-color: #f94949; /* Red background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button i {
+    margin-left: 8px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f94949; /* Darker red on hover */
+}
+
+.card-image .like-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* Semi-transparent background */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.like-icon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.card-price {
+    font-size: x-small;
+    color: #000000a7;
+}
+
+.card-body {
+    text-align: center;
+}.likemain {
+    position: relative;
+    height: 25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro2 {
+    max-width: 800px;
+    max-height: 100%;
+    z-index: 1;
+    background-color: #faf9f9; /* Optional, for additional styling */
+}
+.intro2 img{
+    max-width: 400px;
+    max-height: 100%;
+}
+
+.intro2 h3 {
+    margin-left: 10%;
+    font-size: 40px;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.intro2p {
+    margin-left: 10%;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 400px;
+    color: #000000d3;
+}
+.beforefootter{
+    position: relative;
+    height: 12em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    background-image: url(img/gallery/vidoe_more.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding:1%;
+    margin-left: 1%;
+color: #eeedf0;
+}
+.pp{
+    padding: 2%;
+}
+.pp p{
+    font-size: 10px;
+    margin-top: 6px;
+    width: 150px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.866);
+}
+.pp i{
+    color: white;
+    font-size: 2.4rem;
+    margin-left: 15px;
+
+}
+
+.footter{
+    height: 10em;
+    width: 75%;
+    color: black;
+    font-weight: bold;
+    padding: 1%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:5% 10%;
+}
+.footter p{
+    font-size: 10px;
+    margin-top: 16px;
+    width: 120px;
+    color: #7b7b7d;
+}
+.footter ul{
+list-style: none;
+color: #7b7b7d;
+margin: 0;
+padding: 3px;
+}
+.footter a{
+    font-size: 10px;
+    margin-top: 6px;
+    width: 150px;
+    text-decoration: none;
+    color: #7b7b7d;
+}
+.footter h6{
+    font-weight: bold;
+} 
+ .footter li {
+    margin: 4px;
+}
+
+.end{
+    height: 4em;
+    width: 65%;
+    color: #7b7b7d;
+    font-weight: bold;
+    padding: 3%;
+    bottom: 0;
+
+}
+.end p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.end span{
+    color: #c29999;
+}
+.end i {
+    margin-top: 16px;
+    margin-right: 4px;
+    color: #1e2221;
+}
+
+
+
+
+
+
+@media (max-width: 765px) {
+    *{overflow-x: hidden;
+    }
+    body {
+        font-size: 1.5em;
+        
+    }
+    main{
+        background-size:55%;
+        margin: 0;
+        padding:0px;
+        height: 360px;
+    }
+.intro{
+    width: 200px;
+    max-height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 5px;
+}
+.intro h1 {
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.intro p {
+    margin-left: 4.5%;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #f94949;
+    border-radius: 10px;
+   height: 40px;
+   width: 120px;
+    color: #eeedf0;
+    box-shadow: 0 2px 1px;
+    transition: color 0.4s linear;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.button span {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    float: inline-start;
+    z-index: 2;
+    font-size: 13px;
+    width: 100%;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; /* Initial width is 0% */
+    height: 100%;
+    background-color: #514b4fe6;
+    transition: width 0.7s linear;
+    z-index: 0;
+}
+
+.button:hover::before {
+    width: 100%; 
+}
+.card-img-top{
+    transition: transform 0.5s;
+}
+.card-img-top:hover{
+    transform: scale(1.035); /* Zoom out on hover */
+}
+.img-fluid:hover{
+    transform: scale(1.035);
+    filter: brightness(0.8) contrast(0.9);
+}
+.themidd{
+    text-align: center;
+    margin: 7%;
+    background-color: #f8f8f8;
+}
+.themidd p{
+    font-size: 1em;
+    color: #000000d1;
+}
+.card-price{
+    font-size: small;
+    color: #000000a7;
+}
+.beforefootter{
+    position: relative;
+    height: 25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    background-image: url(img/gallery/vidoe_more.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding: 1%;
+    margin-left: 1%;
+color: #eeedf0;
+}
+.pp{
+    padding: 2%;
+}
+.pp p{
+    font-size: 10px;
+    margin-top: 6px;
+    width: 150px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.866);
+}
+.pp i{
+    color: white;
+    font-size: 2.4rem;
+    margin-left: 15px;
+
+}
+.footter{
+    height: 500px;
+    width: 600px;
+    color: black;
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:5% 25%;
+    padding: 2.7%;
+}
+.footter p{
+    font-size: 9px;
+    margin: 10px 0;
+    width: 150px;
+    color: #7b7b7d;
+}
+.footter ul{
+list-style: none;
+color: #7b7b7d;
+margin: 0;
+padding: 0;
+}
+.footter a{
+    font-size: 10px;
+    margin-top: 0;
+    width: 150px;
+    text-decoration: none;
+    color: #7b7b7d;
+}
+.footter h6{
+    font-weight: bold;
+    margin:1px 0;
+} 
+ .footter li {
+    margin: 0;
+}
+
+.end{
+    height: 6em;
+    width: 100%;
+    color: #7b7b7d;
+    font-weight: bold;
+    padding: 3%;
+    bottom: 0;
+
+}
+.end p{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+.end span{
+    color: #c29999;
+}
+.end i {
+    margin-top: 16px;
+    margin-right: 4px;
+    color: #1e2221;
+}
+.social{
+    margin-left:20px;
+}
+
+.likemain{
+    height: 620px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 97%;
+}
+.intro2 img{
+    width: 350px;
+
+}
+.intro2 p{
+    font-size: 11px;
+    width: 280px;
+    padding: 1px;
+}
+.intro2 .button{
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 120px;
+    margin-bottom: 15px;
+    padding: 0;
+    justify-content: center;
+
+}
+.intro2 span{
+    padding: 0;
+    justify-content: center;
+}
+.intro2 h3{
+    font-size: 18px;
+
+}
+}
+@media (max-width:1025px) and (min-width: 768px) {
+    main{
+        background-size:20.5%;
+        margin: 0;
+        padding:0px;
+        height: 360px;
+    }
+    .intro{
+        width: 385px;
+        max-height: 100%;
+        z-index: 0;
+        overflow: hidden;
+        margin: 50px 5px;
+    }
+ .intro h1{
+    font-size:35px;
+
+ }
+ .intro p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: #15213a;
+}
+
+   
+}
